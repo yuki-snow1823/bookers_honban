@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.flex1{
+  display: flex;
+  width: 100%;
+  background-color: purple;
+  padding: 30px 20px;
+  justify-content: flex-end;
+}
+
+.flex5{
+  display: flex;
+  width: 100%;
+  justify-content:center;
+}
+
+.flex2{
+  display: flex;
+  width: 300px;
+  background-color: rgb(184, 206, 151);
+}
+
+.flex3{
+  display: flex;
+  max-width: 700px;
+  background-color: rgb(51, 78, 10);
+  padding: 20px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.flex3 > div{
+  height: 130px;
+  background-color: yellowgreen;
+  flex-basis: 200px;
+  margin: 10px;
+  align-content: flex-end;
+  
+}
+
+
+.flex1 > div{
+  height: 70px;
+  background-color: pink;
+  flex-basis: 140px;
+  margin: 0 10px;
+}
+
+.flex1 > :first-child {
+  margin-right: auto;
+  /* 余白を作ることで自動的に左による */
+}
+
+.flex4{
+  display: flex;
+  background-color: blue;
+  width: 100%;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content:center;
+}
+
+.flex4 > div{
+  height: 40px;
+  flex-basis: 600px;
+  background-color: skyblue;
+  margin: 10px;
+  align-content: flex-end;
+}
